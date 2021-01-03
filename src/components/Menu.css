@@ -1,0 +1,9 @@
+.Menu{
+  display: flex;
+  padding: 16px 0;
+}
+
+.Menu li {
+  padding-right: 10px;
+  list-style-type: none;
+}
