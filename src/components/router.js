@@ -4,6 +4,9 @@ import CounterWithCustomHook from './01-useState/CounterWithCustomHook'
 import FormWithCustomHook from './02-useEffect/FormWithCustomHook'
 import SimpleForm from './02-useEffect/SimpleForm'
 import MultipleCustomHooks from './03-examples/MultipleCustomHooks'
+import FocusScreen from './04-useRef/FocusScreen'
+import RealExampleRef from './04-useRef/RealExampleRef'
+import Layout from './05-useLayoutEffect/Layout'
 
 const router = [
   {
@@ -40,6 +43,24 @@ const router = [
     route: '/multipleCustomHooks',
     text: 'multipleCustomHooks',
     component: MultipleCustomHooks,
+    exact: false,
+  },
+  {
+    route: '/focusScreen',
+    text: 'focusScreen',
+    component: FocusScreen,
+    exact: false,
+  },
+  {
+    route: '/RealExampleRef',
+    text: 'RealExampleRef',
+    component: RealExampleRef,
+    exact: false,
+  },
+  {
+    route: '/Layout',
+    text: 'Layout',
+    component: Layout,
     exact: false,
   },
 ]
