@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import router from './router'
-import './Menu.css'
 
 export default function Menu() {
   return (
