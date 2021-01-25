@@ -15,7 +15,7 @@ const todoReducer = (state = initialState, action) => {
 
 }
 
-let toDos = todoReducer(initialState, '')
+let todos = todoReducer(initialState, '')
 
 const payloadAddTodo = {
   id: 2,
@@ -28,6 +28,6 @@ const addTodoAction = {
   payload: payloadAddTodo,
 }
 
-toDos = todoReducer(initialState, addTodoAction)
+todos = todoReducer(initialState, addTodoAction)
 
-console.log('file: intro-reducer.js ~ line 32 ~ toDos', toDos)
+console.log('file: intro-reducer.js ~ line 32 ~ todos', todos)

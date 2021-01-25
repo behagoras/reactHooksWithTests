@@ -10,7 +10,7 @@ import Layout from './05-useLayoutEffect/Layout'
 import MemoHook from './06-memos/MemoHook'
 import Memorize from './06-memos/Memorize'
 import Parent from './07-memo/Parent'
-import ToDo from './08-useReducer/ToDo'
+import ToDoApp from './08-useReducer/ToDoApp'
 
 const router = [
   {
@@ -88,7 +88,7 @@ const router = [
   {
     route: '/ToDoApp',
     text: 'ToDoApp',
-    component: ToDo,
+    component: ToDoApp,
     exact: false,
   },
 ]

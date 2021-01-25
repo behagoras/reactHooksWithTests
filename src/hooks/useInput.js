@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 
-export default function useInput() {
-  const [state, setState] = useState('')
+export default function useInput(initialValue = '') {
+  const [state, setState] = useState(initialValue)
   useEffect(() => {
   }, [])
   const handleInputChange = (e) => setState(e.target.value)
-  return [state, handleInputChange]
+  const reset = () => setState(initialValue)
+  return [state, handleInputChange, reset]
 }
