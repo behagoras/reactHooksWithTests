@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MultipleCustomHooks /> should render correctly 1`] = `
+<div>
+  <h1>
+    Breaking Bad characters
+  </h1>
+  <hr />
+  <div
+    className="alert alert-info text-center"
+  >
+    Loading...
+  </div>
+  <div
+    className="buttons text-right"
+  >
+    <button
+      className="btn btn-primary "
+      disabled={true}
+      onClick={false}
+      type="button"
+    >
+      &lt;
+    </button>
+    <button
+      className="btn "
+      onClick={[Function]}
+      type="button"
+    >
+      Reset
+    </button>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      &gt;
+    </button>
+  </div>
+</div>
+`;

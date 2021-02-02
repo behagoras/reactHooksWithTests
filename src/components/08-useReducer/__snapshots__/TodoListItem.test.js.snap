@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoListItem /> should render correctly 1`] = `
+<li
+  className="list-group-item"
+  key="123"
+>
+  <input
+    checked={true}
+    className="form-check-input"
+    id="done"
+    name="done"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <input
+    className="form-control todo complete"
+    id="todo"
+    name="todo"
+    onChange={[Function]}
+    placeholder="Add your todo description"
+    type="text"
+    value="read a book"
+  />
+  <div
+    className="col-5"
+  >
+    <button
+      className="btn btn-outline-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+  </div>
+</li>
+`;

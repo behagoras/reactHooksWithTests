@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoList /> should render correctly 1`] = `
+<ul
+  className="list-group list-group-flush col-7"
+>
+  <TodoListItem
+    deleteTodo={[MockFunction]}
+    editTodo={[MockFunction]}
+    key="123"
+    todo={
+      Object {
+        "done": true,
+        "id": "123",
+        "todo": "read a book",
+      }
+    }
+  />
+  <TodoListItem
+    deleteTodo={[MockFunction]}
+    editTodo={[MockFunction]}
+    key="234"
+    todo={
+      Object {
+        "done": false,
+        "id": "234",
+        "todo": "learn new tech",
+      }
+    }
+  />
+</ul>
+`;

@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 export default function useFetch(url, options = {}) {
   const isMounted = useRef(true)
   const [state, setState] = useState({ data: null, loading: true, error: null })
-  const endError = (error) => isMounted.current && setState({ ...state, loading: false, error })
+  const endError = (error) => isMounted.current && setState({ data: null, loading: false, error })
   const setLoading = (bool) => isMounted.current && setState({ ...state, loading: bool })
 
   useEffect(() => {

@@ -19,7 +19,7 @@ export default function MultipleCustomHooks() {
   useEffect(() => { setQuoteUrl(`${baseUrl}/quotes/${counter}`) }, [counter])
 
   return (
-    <>
+    <div>
       <h1>Breaking Bad characters</h1>
       <hr />
       {loading ? (
@@ -27,8 +27,9 @@ export default function MultipleCustomHooks() {
           Loading...
         </div>
       ) :
-        data && data.map((quote) => (
-          <blockquote className="blockquote text-right">
+        data && data.map((quote, index) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <blockquote className="blockquote text-right" key={index}>
             <p className="mb-0">{quote?.quote}</p>
             <footer className="blockquote-footer">{quote?.author}</footer>
           </blockquote>
@@ -59,7 +60,7 @@ export default function MultipleCustomHooks() {
         </button>
       </div>
       {error && <pre>{JSON.stringify(error, 0, 1)}</pre>}
-    </>
+    </div>
   )
 }
 

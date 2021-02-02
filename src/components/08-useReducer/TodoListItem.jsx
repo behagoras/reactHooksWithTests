@@ -22,7 +22,13 @@ export default function TodoListItem({ todo = {}, editTodo, deleteTodo }) {
         onChange={(e) => editTodo({ id: todo.id, todo: e.target.value })}
       />
       <div className="col-5">
-        <button type="button" className="btn btn-outline-primary" onClick={() => deleteTodo(todo.id)}>-</button>
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          onClick={() => deleteTodo(todo.id)}
+        >
+          -
+        </button>
       </div>
     </li>
   )

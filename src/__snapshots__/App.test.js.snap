@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App />  should render correctly 1`] = `
+<div
+  className="App"
+>
+  <BrowserRouter>
+    <Menu />
+    <hr />
+    <Switch>
+      <Route
+        exact={true}
+        path="/"
+      >
+        <component />
+      </Route>
+      <Route
+        exact={false}
+        path="/counterApp"
+      >
+        <CounterApp />
+      </Route>
+      <Route
+        exact={false}
+        path="/counterWithCustomHook"
+      >
+        <CounterWithCustomHook />
+      </Route>
+      <Route
+        exact={false}
+        path="/simpleForm"
+      >
+        <SimpleForm />
+      </Route>
+      <Route
+        exact={false}
+        path="/formWithCustomHook"
+      >
+        <FormWithCustomHook />
+      </Route>
+      <Route
+        exact={false}
+        path="/multipleCustomHooks"
+      >
+        <MultipleCustomHooks />
+      </Route>
+      <Route
+        exact={false}
+        path="/focusScreen"
+      >
+        <FocusScreen />
+      </Route>
+      <Route
+        exact={false}
+        path="/RealExampleRef"
+      >
+        <RealExampleRef />
+      </Route>
+      <Route
+        exact={false}
+        path="/Layout"
+      >
+        <Layout />
+      </Route>
+      <Route
+        exact={false}
+        path="/Memorize"
+      >
+        <Memorize />
+      </Route>
+      <Route
+        exact={false}
+        path="/MemoHook"
+      >
+        <MemoHook />
+      </Route>
+      <Route
+        exact={false}
+        path="/Parent"
+      >
+        <Memo() />
+      </Route>
+      <Route
+        exact={false}
+        path="/ToDoApp"
+      >
+        <ToDoApp />
+      </Route>
+      <Route
+        exact={false}
+        path="/reducer"
+      >
+        <MainApp />
+      </Route>
+      <Redirect
+        to="/"
+      />
+    </Switch>
+    <hr />
+  </BrowserRouter>
+</div>
+`;
