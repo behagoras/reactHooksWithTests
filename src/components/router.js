@@ -11,6 +11,7 @@ import MemoHook from './06-memos/MemoHook'
 import Memorize from './06-memos/Memorize'
 import Parent from './07-memo/Parent'
 import ToDoApp from './08-useReducer/ToDoApp'
+import MainApp from './09-useContext/MainApp'
 
 const router = [
   {
@@ -89,6 +90,12 @@ const router = [
     route: '/ToDoApp',
     text: 'ToDoApp',
     component: ToDoApp,
+    exact: false,
+  },
+  {
+    route: '/reducer',
+    text: 'Reducer App',
+    component: MainApp,
     exact: false,
   },
 ]
